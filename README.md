@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Auteur :** Litissia LARBI  
-**Formation :** M1 Informatique & Big Data - Université Paris 8  
+**Formation :** M1 Informatique & Big Data - Université Paris 8 - Vincennes-Saint Denis
 **Projet Academique dans le cadre du module :** Hypermedia (2025-2026)
 
 ---
