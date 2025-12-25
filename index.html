@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuageMaker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.2.2/wordcloud2.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-title">
+                <div class="logo">N</div>
+                <h1>NuageMaker</h1>
+            </div>
+            <p class="subtitle">Générateur de Nuage de Mots Intelligent</p>
+        </header>
+
+        <div class="main">
+            <div class="panel">
+                <h2>📝 Saisie du texte</h2>
+                <textarea id="text" placeholder="Collez votre texte ici..."></textarea>
+                
+                <label class="file-label" for="file">
+                    <span style="font-size: 2rem;">📁</span>
+                    <span id="fileName">Importer un fichier .txt</span>
+                </label>
+                <input type="file" id="file" class="file-input" accept=".txt">
+                
+                <button class="btn" id="generateBtn" onclick="generer()">🚀 Générer le nuage</button>
+                
+                <div class="stats" id="stats">
+                    <p><strong>Statistiques :</strong></p>
+                    <p>Mots traités : <span id="total">0</span></p>
+                    <p>Mots uniques : <span id="unique">0</span></p>
+                    <p>Mots supprimés : <span id="removed">0</span></p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="cloud-header">
+                    <h2>☁️ Nuage de mots</h2>
+                    <button class="btn btn-secondary" id="download" style="display:none;" onclick="telecharger()">💾 Télécharger</button>
+                </div>
+                <canvas id="cloud" width="1200" height="700"></canvas>
+                
+                <h2 style="margin-top: 20px;">📊 Mots-clés et fréquences</h2>
+                <div class="keywords" id="keywords">
+                    <p style="text-align: center; color: #555; padding: 40px;">Les mots-clés s'afficheront ici</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
